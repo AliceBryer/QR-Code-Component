@@ -1,26 +1,73 @@
-/* # Front-end Style Guide
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sofia Sans', sans-serif;
 
-## Layout
 
 The designs were created to the following widths:
 
 - Mobile: 375px
 - Desktop: 1440px
 
-## Colors
-
-- White: hsl(0, 0%, 100%)
-- Light gray: hsl(212, 45%, 89%)
-- Grayish blue: hsl(220, 15%, 55%)
-- Dark blue: hsl(218, 44%, 22%)
-
-## Typography
-
-### Body Copy
 
 - Font size (paragraph): 15px
 
 ### Font
 
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 400, 700
+- Weights: 400, 700 */
+
+:root {
+  --gray: hsl(212, 45%, 89%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --grey-blue: hsl(220, 15%, 55%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray);
+}
+
+.QR-container {
+  width: 300px;
+  height: 450px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--white);
+}
+
+.image-container {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-radius: 5%;
+  border: solid blue 2px;
+}
+
+.image {
+  height: 100%;
+  object-fit: fill;
+}
+.description-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+  margin: 10px;
+}
+
+.description-content p {
+  font-size: 15px;
+}
